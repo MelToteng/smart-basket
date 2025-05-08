@@ -37,5 +37,5 @@ This project began as a simple barcode scanning test. It’s now evolving into a
 To run locally on Android:
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/smartbasket.git
+   git clone https://github.com/MelToteng/smart-basket.git
 
