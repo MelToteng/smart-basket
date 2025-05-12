@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:barcode="clr-namespace:BarcodeScanning;assembly=BarcodeScanning.Native.Maui"
+             xmlns:control="clr-namespace:scanner.Controls"
+             x:Class="scanner.MainPage"
+             BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}">
+    <Grid RowDefinitions="Auto,*,Auto">
+
+        <!-- Mode Tabs -->
+        <Frame Grid.Row="0" 
+               BackgroundColor="#0066FF" 
+               Padding="5" 
+               CornerRadius="25"
+               Margin="10,10,10,5"
+               HasShadow="False"
+               BorderColor="Transparent">
+            <Grid ColumnDefinitions="*,*">
+                <!-- Manage Mode Tab -->
+                <Frame Grid.Column="0"
+                       x:Name="ManageModeFrame"
+                       BackgroundColor="White"
+                       CornerRadius="20"
+                       Padding="0"
+                       HasShadow="False"
+                       BorderColor="#0066FF">
+                    <Button x:Name="ManageModeButton"
+                            Text="Budget Mode"
+                            TextColor="#0066FF"
+                            BackgroundColor="Transparent"
+                            FontSize="14"
+                            Clicked="OnManageModeClicked"/>
+                </Frame>
+
+                <!-- Buy Mode Tab -->
+                <Frame Grid.Column="1"
+                       x:Name="BuyModeFrame"
+                       BackgroundColor="Transparent"
+                       CornerRadius="20"
+                       Padding="0"
+                       HasShadow="False"
+                       BorderColor="Transparent">
+                    <Button x:Name="BuyModeButton"
+                            Text="Buy Mode"
+                            TextColor="White"
+                            BackgroundColor="Transparent"
+                            FontSize="14"
+                            Clicked="OnBuyModeClicked"/>
+                </Frame>
+            </Grid>
+        </Frame>
+        <Grid Grid.Row="1" RowDefinitions="Auto,*,Auto">
+            <!-- Scanner and Manual Add Section -->
+            <VerticalStackLayout Grid.Row="0" Padding="10" Spacing="10">
+                <Grid x:Name="barcodeView" IsVisible="false" Padding="5">
+                    <barcode:CameraView WidthRequest="300"
+             HeightRequest="150"
+             HorizontalOptions="Center"
+             VerticalOptions="Start"
+             OnDetectionFinished="CameraView_OnDetectionFinished"
+             CaptureQuality="High"
+             ForceInverted="True"
+             TapToFocusEnabled="True"
+             BarcodeSymbologies="All"
+             AimMode="True"
+             x:Name="Barcode"/>
+
+                    <GraphicsView WidthRequest="200"
+       HeightRequest="100"
+       HorizontalOptions="Center"
+       VerticalOptions="Start"
+       x:Name="Graphics"
+       InputTransparent="True"/>
+                </Grid>
+                <Button x:Name="CloseButton" IsVisible="False"
+             Text="Done"
+             WidthRequest="250"
+             HorizontalOptions="Center"
+             CornerRadius="10" 
+             Clicked="OnScanButtonClicked" />
+            </VerticalStackLayout>
+            <!-- Body -->
+            <CollectionView x:Name="Lists" Grid.Row="1" Margin="0,0,0,10">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout>
+                            <Frame Margin="10,5" Padding="10" BorderColor="LightGray" CornerRadius="10">
+                                <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="*, Auto, Auto, Auto">
+                                    <!--Name Label-->
+                                    <Label Text="{Binding Name}" 
+                    FontAttributes="Bold" 
+                    FontSize="16"
+                    Grid.ColumnSpan="4"/>
+
+                                    <!--Description Label-->
+                                    <Label Text="{Binding Description}" 
+                    Grid.Row="1" 
+                    Grid.Column="0"
+                    FontSize="14"
+                    LineBreakMode="TailTruncation"
+                    VerticalOptions="Center"/>
+
+                                    <!--Price Label-->
+                                    <Label Text="{Binding Cost, StringFormat='P{0:F2}'}" 
+                    Grid.Row="1" 
+                    Grid.Column="1"
+                    FontAttributes="Bold"
+                    VerticalOptions="Center"
+                    Margin="0,0,10,0"/>
+
+                                    <!--Edit Button-->
+                                    <Button Grid.Row="1" 
+                     Grid.Column="2"
+                     WidthRequest="40"
+                     HeightRequest="40"
+                     CornerRadius="20"
+                     Padding="0"
+                     Margin="0,0,5,0"
+                     BackgroundColor="#007AFF"
+                     Clicked="onEditClicked" CommandParameter="{Binding Id}">
+                                        <Button.ImageSource>
+                                            <FontImageSource Glyph="&#xf044;"
+                                      FontFamily="FontAwesomeSolid"
+                                      Size="18"
+                                      Color="White"/>
+                                        </Button.ImageSource>
+                                    </Button>
+
+                                    <!--Add Button-->
+                                    <Button Grid.Row="1" 
+                     Grid.Column="3"
+                     WidthRequest="40"
+                     HeightRequest="40"
+                     CornerRadius="20"
+                     Padding="0"
+                     BackgroundColor="red"
+                     Clicked="onDeleteClicked" CommandParameter="{Binding Id}">
+                                        <Button.ImageSource>
+                                            <FontImageSource Glyph="&#xf2ed;"
+                                      FontFamily="FontAwesomeSolid"
+                                      Size="18"
+                                      Color="White"/>
+                                        </Button.ImageSource>
+                                    </Button>
+                                </Grid>
+                            </Frame>
+                            <CollectionView x:Name="ProductList">
+                            </CollectionView>
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <!-- Bottom Panel -->
+            <Frame Grid.Row="2"
+        BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray900}}"
+        BorderColor="Transparent"
+        Margin="0"
+        Padding="16,5"
+        HasShadow="True">
+                <Grid ColumnDefinitions="*, Auto">
+                    <!-- Totals Label -->
+                    <Label x:Name="totalCostLabel"
+                FontSize="18"
+                FontAttributes="Bold"
+                VerticalOptions="Center" />
+
+                    <!-- Floating Button -->
+                    <Button x:Name="FloatingActionButton" Grid.Column="1"
+                 FontSize="18"
+                 FontFamily="FontAwesomeSolid"
+                 Text=""
+                 FontAttributes="Bold"
+                 WidthRequest="50"
+                 HeightRequest="50"
+                 CornerRadius="30"
+                 BackgroundColor="#4CD964"
+                 TextColor="White"
+                 Clicked="OnFloatingActionButtonClicked">
+                        <Button.ImageSource>
+                            <FontImageSource x:Name="FloatingActionButtonIcon"
+                                    Glyph="+"                                             
+                                    Color="White"
+                                    Size="24"/>
+                        </Button.ImageSource>
+                    </Button>
+                </Grid>
+            </Frame>
+
+            <!-- Popup -->
+            <Frame x:Name="PopupMenu"
+        Grid.RowSpan="3"
+        BackgroundColor="Transparent"
+        BorderColor="Transparent"
+        CornerRadius="0"
+        Margin="20,0,20,80"
+        Padding="0"
+        VerticalOptions="End"
+        HorizontalOptions="EndAndExpand"
+        IsVisible="false">
+                <StackLayout Spacing="15" HorizontalOptions="Center">
+                    <Button x:Name="ScanBtn" WidthRequest="40"
+                 HeightRequest="40"
+                 CornerRadius="30"
+                 BackgroundColor="#007AFF"
+                 Clicked="OnScanButtonClicked">
+                        <Button.ImageSource>
+                            <FontImageSource Glyph="&#xf083;" 
+                                  FontFamily="FontAwesomeSolid"
+                                  Size="18"
+                                  Color="White"/>
+                        </Button.ImageSource>
+                    </Button>
+                    <Button x:Name="AddManuallyBtn" WidthRequest="40"
+                 HeightRequest="40"
+                 CornerRadius="30"
+                 BackgroundColor="#4CD964"
+                 Clicked="AddButton_Clicked">
+                        <Button.ImageSource>
+                            <FontImageSource Glyph="&#xf5ae;" 
+                  FontFamily="FontAwesomeSolid"
+                                  Size="15"/>
+                        </Button.ImageSource>
+                    </Button>
+                    <Button x:Name="DeleteAllBtn" WidthRequest="40"
+                        HeightRequest="40"
+                        CornerRadius="30"
+                        BackgroundColor="Red"
+                        Clicked="DeleteAllButton_Clicked">
+                        <Button.ImageSource>
+                            <FontImageSource Glyph="&#xf51a;" 
+                            FontFamily="FontAwesomeSolid"
+                            Size="15"/>
+                        </Button.ImageSource>
+                    </Button>
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </Grid>
+</ContentPage>

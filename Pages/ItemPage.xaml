@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mopups:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+             x:Class="scanner.Pages.ItemPage"
+             BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}">
+    <ScrollView HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout Padding="20" Spacing="15">
+            <!-- Product Name -->
+            <!--<StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+                <Label Text="Product Name" FontSize="Medium" VerticalOptions="Center"/>
+                <Button x:Name="captureOcr" Text="📷" Clicked="captureOcr_Clicked" IsVisible="False"
+                    BackgroundColor="Transparent"
+                    FontSize="Small" 
+                    WidthRequest="40" HeightRequest="40"
+                    BorderColor="Gray" BorderWidth="1"
+                    CornerRadius="20"
+                    Margin="10,0,0,0" />
+                --><!-- Small Camera Button Inline --><!--
+            </StackLayout>-->
+            <Entry x:Name="ProductIdEntry" Text="" Placeholder="System generated Id" IsVisible="False"/>
+
+            <Entry x:Name="NameEntry" Text="" Placeholder="Enter product name"/>
+
+            <!-- Product Barcode -->
+            <Label x:Name="ProductBarcodeEntryLabel" Text="Barcode" FontSize="Medium"/>
+            <Editor x:Name="BarcodeEntry" Text="" Placeholder="Enter product barcode"/>
+
+            <!-- Product Description -->
+            <Label Text="Description" FontSize="Medium"/>
+            <Editor x:Name="DescriptionEntry" Text="" Placeholder="Enter product description"/>
+
+            <!-- Estimated Cost -->
+            <Label Text="Estimated Cost" FontSize="Medium"/>
+            <Entry x:Name="EstimatedCostEntry" Text="" Placeholder="Enter cost" Keyboard="Numeric"/>
+
+            <!-- Quantity -->
+            <Label Text="Quantity" FontSize="Medium"/>
+            <Entry x:Name="QuantityField" Text="" Placeholder="Enter Quantiy" Keyboard="Numeric"/>
+
+            <!-- Add and Cancel Buttons -->
+            <Button x:Name="AddButton" Text="Save" Clicked="AddButton_Clicked" BackgroundColor="#2B0B98" TextColor="White"/>
+            <Button x:Name="CancelButton" Text="Cancel" Clicked="CancelButton_Clicked" BackgroundColor="Red" TextColor="White"/>
+        </StackLayout>
+    </ScrollView>
+    
+</mopups:PopupPage>

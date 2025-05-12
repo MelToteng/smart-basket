@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Melchizedek Toteng\\source\\repos\\scanner\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{48C4AF32-B1F2-49C4-9D3E-C71B86019A3E}|scanner.csproj|c:\\users\\melchizedek toteng\\source\\repos\\scanner\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48C4AF32-B1F2-49C4-9D3E-C71B86019A3E}|scanner.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C4AF32-B1F2-49C4-9D3E-C71B86019A3E}|scanner.csproj|c:\\users\\melchizedek toteng\\source\\repos\\scanner\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48C4AF32-B1F2-49C4-9D3E-C71B86019A3E}|scanner.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C4AF32-B1F2-49C4-9D3E-C71B86019A3E}|scanner.csproj|c:\\users\\melchizedek toteng\\source\\repos\\scanner\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48C4AF32-B1F2-49C4-9D3E-C71B86019A3E}|scanner.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C4AF32-B1F2-49C4-9D3E-C71B86019A3E}|scanner.csproj|c:\\users\\melchizedek toteng\\source\\repos\\scanner\\pages\\itempage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48C4AF32-B1F2-49C4-9D3E-C71B86019A3E}|scanner.csproj|solutionrelative:pages\\itempage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C4AF32-B1F2-49C4-9D3E-C71B86019A3E}|scanner.csproj|c:\\users\\melchizedek toteng\\source\\repos\\scanner\\model\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48C4AF32-B1F2-49C4-9D3E-C71B86019A3E}|scanner.csproj|solutionrelative:model\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C4AF32-B1F2-49C4-9D3E-C71B86019A3E}|scanner.csproj|c:\\users\\melchizedek toteng\\source\\repos\\scanner\\pages\\itempage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48C4AF32-B1F2-49C4-9D3E-C71B86019A3E}|scanner.csproj|solutionrelative:pages\\itempage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C4AF32-B1F2-49C4-9D3E-C71B86019A3E}|scanner.csproj|c:\\users\\melchizedek toteng\\source\\repos\\scanner\\viewmodel\\itemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48C4AF32-B1F2-49C4-9D3E-C71B86019A3E}|scanner.csproj|solutionrelative:viewmodel\\itemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C4AF32-B1F2-49C4-9D3E-C71B86019A3E}|scanner.csproj|c:\\users\\melchizedek toteng\\source\\repos\\scanner\\services\\itemservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48C4AF32-B1F2-49C4-9D3E-C71B86019A3E}|scanner.csproj|solutionrelative:services\\itemservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C4AF32-B1F2-49C4-9D3E-C71B86019A3E}|scanner.csproj|c:\\users\\melchizedek toteng\\source\\repos\\scanner\\services\\db\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48C4AF32-B1F2-49C4-9D3E-C71B86019A3E}|scanner.csproj|solutionrelative:services\\db\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C4AF32-B1F2-49C4-9D3E-C71B86019A3E}|scanner.csproj|c:\\users\\melchizedek toteng\\source\\repos\\scanner\\services\\db\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48C4AF32-B1F2-49C4-9D3E-C71B86019A3E}|scanner.csproj|solutionrelative:services\\db\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 205,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\Melchizedek Toteng\\source\\repos\\scanner\\Model\\Item.cs",
+              "RelativeDocumentMoniker": "Model\\Item.cs",
+              "ToolTip": "C:\\Users\\Melchizedek Toteng\\source\\repos\\scanner\\Model\\Item.cs",
+              "RelativeToolTip": "Model\\Item.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T18:57:43.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ItemViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Melchizedek Toteng\\source\\repos\\scanner\\ViewModel\\ItemViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ItemViewModel.cs",
+              "ToolTip": "C:\\Users\\Melchizedek Toteng\\source\\repos\\scanner\\ViewModel\\ItemViewModel.cs",
+              "RelativeToolTip": "ViewModel\\ItemViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T18:51:11.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Melchizedek Toteng\\source\\repos\\scanner\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Melchizedek Toteng\\source\\repos\\scanner\\MainPage.xaml.cs",
+              "RelativeToolTip": "MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T07:23:37.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ItemPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Melchizedek Toteng\\source\\repos\\scanner\\Pages\\ItemPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\ItemPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Melchizedek Toteng\\source\\repos\\scanner\\Pages\\ItemPage.xaml.cs",
+              "RelativeToolTip": "Pages\\ItemPage.xaml.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAUwHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T07:26:31.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ItemPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Melchizedek Toteng\\source\\repos\\scanner\\Pages\\ItemPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\ItemPage.xaml",
+              "ToolTip": "C:\\Users\\Melchizedek Toteng\\source\\repos\\scanner\\Pages\\ItemPage.xaml",
+              "RelativeToolTip": "Pages\\ItemPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-03T11:37:30.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Melchizedek Toteng\\source\\repos\\scanner\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MainPage.xaml",
+              "ToolTip": "C:\\Users\\Melchizedek Toteng\\source\\repos\\scanner\\MainPage.xaml",
+              "RelativeToolTip": "MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-03T07:23:33.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\Melchizedek Toteng\\source\\repos\\scanner\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "C:\\Users\\Melchizedek Toteng\\source\\repos\\scanner\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T06:37:06.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Melchizedek Toteng\\source\\repos\\scanner\\Services\\DB\\Repository.cs",
+              "RelativeDocumentMoniker": "Services\\DB\\Repository.cs",
+              "ToolTip": "C:\\Users\\Melchizedek Toteng\\source\\repos\\scanner\\Services\\DB\\Repository.cs",
+              "RelativeToolTip": "Services\\DB\\Repository.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwEQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T21:07:34.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ItemServices.cs",
+              "DocumentMoniker": "C:\\Users\\Melchizedek Toteng\\source\\repos\\scanner\\Services\\ItemServices.cs",
+              "RelativeDocumentMoniker": "Services\\ItemServices.cs",
+              "ToolTip": "C:\\Users\\Melchizedek Toteng\\source\\repos\\scanner\\Services\\ItemServices.cs",
+              "RelativeToolTip": "Services\\ItemServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T11:28:36.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Melchizedek Toteng\\source\\repos\\scanner\\Services\\DB\\IRepository.cs",
+              "RelativeDocumentMoniker": "Services\\DB\\IRepository.cs",
+              "ToolTip": "C:\\Users\\Melchizedek Toteng\\source\\repos\\scanner\\Services\\DB\\IRepository.cs",
+              "RelativeToolTip": "Services\\DB\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T21:03:30.355Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
