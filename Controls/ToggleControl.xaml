@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="scanner.Controls.ToggleControl">
+  <ContentView.Content>
+        <Frame BackgroundColor="#007AFF" 
+           CornerRadius="28" 
+           Padding="6" 
+           HasShadow="False"
+           BorderColor="Transparent"
+           HeightRequest="56"
+           WidthRequest="390">
+            <Grid ColumnDefinitions="*,*">
+                <!-- Manage Mode Button -->
+                <Frame Grid.Column="0" 
+                   BackgroundColor="{Binding ManageBackgroundColor}" 
+                   CornerRadius="24" 
+                   Padding="0" 
+                   HasShadow="False"
+                   BorderColor="Transparent">
+                    <Button Text="Manage Mode" 
+                        TextColor="{Binding ManageTextColor}" 
+                        BackgroundColor="Transparent" 
+                        Clicked="OnManageClicked"
+                        FontSize="15"
+                        FontAttributes="Bold" />
+                </Frame>
+
+                <!-- Buy Mode Button -->
+                <Frame Grid.Column="1" 
+                   BackgroundColor="{Binding BuyBackgroundColor}" 
+                   CornerRadius="24" 
+                   Padding="0" 
+                   HasShadow="False"
+                   BorderColor="Transparent">
+                    <Button Text="Buy Mode" 
+                        TextColor="{Binding BuyTextColor}" 
+                        BackgroundColor="Transparent" 
+                        Clicked="OnBuyClicked"
+                        FontSize="15"
+                        FontAttributes="Bold" />
+                </Frame>
+            </Grid>
+        </Frame>
+    </ContentView.Content>
+</ContentView>
